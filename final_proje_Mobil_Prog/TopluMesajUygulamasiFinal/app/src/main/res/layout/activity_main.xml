@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edt_nameEditText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Isim"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edt_numberEditText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Numara"
+            android:inputType="number"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/bttnide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsSubmissionPageActivity"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edt_smsSubmissionPage_smsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mesajınızı yazın"
+        android:minHeight="100dp"
+        android:gravity="top"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rdBtn_smsSubmissionPage_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arkadaş"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rdBtn_smsSubmissionPage_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İş"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rdBtn_smsSubmissionPage_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akraba"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_refreshButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yenile"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_clearRecords"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kayıtları Temizle"
+            android:backgroundTint="#FF5722"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_smsSubmissionPage_submissionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS Gönder"
+        android:layout_marginBottom="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lst_smsSubmissionPage_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
